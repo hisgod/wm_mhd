@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wm.collector">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.aib.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.aib.view.activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.aib.view.activity.WaitActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.aib.view.activity.SplashActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aib.view.activity.GuideActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.aib.view.activity.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.aib.view.activity.PersonalInfoActivity"
+            android:launchMode="singleTask" />
+        <!-- 客服中心 -->
+        <activity
+            android:name="com.aib.view.activity.CustomerActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/customer_theme" />
+        <!-- 注册 -->
+        <activity
+            android:name="com.aib.view.activity.RegisterActivity"
+            android:launchMode="singleTask" />
+        <!-- 协议 -->
+        <activity
+            android:name="com.aib.view.activity.AgreementActivity"
+            android:launchMode="singleTask" />
+        <!-- 忘记密码 -->
+        <activity
+            android:name="com.aib.view.activity.ForgetPwdActivity"
+            android:launchMode="singleTask" />
+        <!-- 联系人 -->
+        <activity
+            android:name="com.aib.view.activity.RelationActivity"
+            android:launchMode="singleTask" />
+        <!-- 工作信息 -->
+        <activity
+            android:name="com.aib.view.activity.WorkInfoActivity"
+            android:launchMode="singleTask" />
+        <!--芝麻分-->
+        <activity
+            android:name="com.aib.view.activity.ZmActivity"
+            android:launchMode="singleTask" />
+        <!--贷款平台详情-->
+        <activity
+            android:name="com.aib.view.activity.LoanDetailActivity"
+            android:launchMode="singleTask" />
+        <!--WebView-->
+        <activity
+            android:name="com.aib.view.activity.WebViewActivity"
+            android:launchMode="singleTask" />
+        <!--消息中心-->
+        <activity
+            android:name="com.aib.view.activity.MsgCenterActivity"
+            android:launchMode="singleTask" />
+    </application>
+
+</manifest>

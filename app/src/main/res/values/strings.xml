@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">麻花贷</string>
+    <string name="loan_detail_behavior">com.aib.widget.LoanDetailBehavior</string>
+</resources>
